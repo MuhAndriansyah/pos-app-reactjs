@@ -159,7 +159,7 @@ function Login(props) {
             </Link>
           </Typography>
           <Typography className={classes.link}>
-            Belum Punya Akun?
+            Belum Punya Akun?{" "}
             <Link component={RouterLink} to="/registrasi">
               Silahkan Daftar
             </Link>

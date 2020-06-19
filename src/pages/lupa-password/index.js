@@ -130,6 +130,11 @@ function LupaPassword() {
           >
             Kirim
           </Button>
+          <Typography className={classes.link}>
+            <Link component={RouterLink} to="/">
+              Kembali
+            </Link>
+          </Typography>
         </form>
       </Paper>
     </Container>

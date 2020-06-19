@@ -168,7 +168,7 @@ function Registrasi() {
             Daftar
           </Button>
           <Typography className={classes.link}>
-            Sudah Punya Akun?
+            Sudah Punya Akun?{" "}
             <Link component={RouterLink} to="/login">
               Silahkan Login
             </Link>
