@@ -1,8 +1,10 @@
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => ({
-  tabContent: {
-    padding: theme.spacing(4),
+  formPengguna: {
+    display: "flex",
+    flexDirection: "column",
+    width: 300,
   },
 }));
 

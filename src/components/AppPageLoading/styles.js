@@ -1,8 +1,11 @@
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => ({
-  tabContent: {
-    padding: theme.spacing(4),
+  loadingBox: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "50vh",
   },
 }));
 

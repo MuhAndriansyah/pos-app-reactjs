@@ -5,15 +5,17 @@ import Paper from "@material-ui/core/Paper";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Pengguna from "./Pengguna";
 import Toko from "./Toko";
+import useStyles from "./styles/index";
 
 function Pengaturan(props) {
+  const clasess = useStyles();
   const { location, history } = props;
 
   const handleChange = (event, value) => {
     history.push(value);
   };
   return (
-    <Paper square>
+    <Paper square className={clasess.tabContent}>
       <Tabs
         value={location.pathname}
         indicatorColor="primary"

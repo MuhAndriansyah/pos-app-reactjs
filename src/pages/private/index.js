@@ -29,7 +29,7 @@ import { useFirebase } from "../../components/FirebaseProvider";
 
 export default function Private() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const { auth } = useFirebase();
 
   const handleDrawerOpen = () => {
@@ -155,7 +155,7 @@ export default function Private() {
                 <ListItem
                   button
                   selected={match ? true : false}
-                  onClick={() => history.push("/pengaturan")}
+                  onClick={() => history.push("/pengaturan/pengguna")}
                 >
                   <ListItemIcon>
                     <SettingsIcon />
