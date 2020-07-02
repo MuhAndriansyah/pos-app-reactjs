@@ -98,7 +98,7 @@ function Toko() {
 
   return (
     <div className={clasess.formToko}>
-      <form noValidate>
+      <form onSubmit={handleSubmit} noValidate>
         <TextField
           id="nama"
           name="nama"
@@ -159,7 +159,6 @@ function Toko() {
           color="primary"
           fullWidth
           className={clasess.button}
-          onClick={handleSubmit}
           disabled={isSubmitting || !isSomethingChange}
         >
           SIMPAN
