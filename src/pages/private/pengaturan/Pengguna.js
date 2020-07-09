@@ -8,7 +8,7 @@ import useStyles from "./styles/Pengguna";
 import { useSnackbar } from "notistack";
 import isEmail from "validator/lib/isEmail";
 
-export default function Pengguna() {
+function Pengguna() {
   const clasess = useStyles();
 
   const { user } = useFirebase();
@@ -191,3 +191,5 @@ export default function Pengguna() {
     </div>
   );
 }
+
+export default Pengguna;
