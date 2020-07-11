@@ -57,7 +57,7 @@ function Home() {
     if (snapshotTransaksi) {
       setTransaksi((transaksi) => ({
         ...transaksi,
-        no: `${transaksi.tanggal}/${snapshotTransaksi.docs.length}`,
+        no: `${transaksi.tanggal}/${snapshotTransaksi.docs.length + 1}`,
       }));
     } else {
       setTransaksi((transaksi) => ({
