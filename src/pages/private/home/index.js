@@ -20,7 +20,7 @@ import Button from "@material-ui/core/Button";
 import { useCollection } from "react-firebase-hooks/firestore";
 import AppPageLoading from "../../../components/AppPageLoading";
 import { useSnackbar } from "notistack";
-import { currency } from "../../../utils/Formater";
+import { currency } from "../../../utils/Formatter";
 import format from "date-fns/format";
 import useStyles from "./styles";
 import SaveIcon from "@material-ui/icons/Save";

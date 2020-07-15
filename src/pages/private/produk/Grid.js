@@ -3,7 +3,7 @@ import AddDialogProduk from "./AddDialogProduk";
 import { useFirebase } from "../../../components/FirebaseProvider";
 import { useCollection } from "react-firebase-hooks/firestore";
 import AppPageLoading from "../../../components/AppPageLoading";
-import { currency } from "../../../utils/Formater";
+import { currency } from "../../../utils/Formatter";
 import { Link } from "react-router-dom";
 import Fab from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/Add";

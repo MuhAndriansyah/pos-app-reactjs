@@ -28,13 +28,23 @@ function Toko() {
     telepon: "",
     website: "",
   });
+
   const [isSomethingChange, setSomethingChange] = useState(false);
   const [isSubmitting, setSubmitting] = useState(false);
+
   useEffect(() => {
-    if (snapshot) {
+    if (snapshot && snapshot.exists) {
       setForm(snapshot.data());
+    } else {
+      setForm({
+        nama: "",
+        alamat: "",
+        telepon: "",
+        website: "",
+      });
     }
   }, [snapshot]);
+
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -160,6 +170,7 @@ function Toko() {
           fullWidth
           className={clasess.button}
           disabled={isSubmitting || !isSomethingChange}
+          type="submit"
         >
           SIMPAN
         </Button>

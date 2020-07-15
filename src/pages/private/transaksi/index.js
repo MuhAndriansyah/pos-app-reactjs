@@ -10,7 +10,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { useFirebase } from "../../../components/FirebaseProvider";
 
-import { currency } from "../../../utils/Formater";
+import { currency } from "../../../utils/Formatter";
 import AppPageLoading from "../../../components/AppPageLoading";
 import format from "date-fns/format";
 import useStyles from "./styles";
